@@ -1,6 +1,6 @@
 
 import express from "express";
-import * as destinationController from "../controllers/destination_controllers";
+import * as destinationController from "../controllers/destination_controllers.js";
 const router = express.Router();
 
 router.route("/").get(destinationController.getAllDestinations)
@@ -8,4 +8,5 @@ router.route("/").get(destinationController.getAllDestinations)
 router.route("/:id").get(destinationController.getDestinationById)
                     .delete(destinationController.deleteDestinationById)
                     .patch(destinationController.updateDestination);
-export default router;                    
+export default router;
+                  

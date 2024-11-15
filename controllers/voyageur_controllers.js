@@ -1,4 +1,4 @@
-import * as voyageurService from "../services/voyageur_services";
+import * as voyageurService from "../services/voyageur_services.js";
 
 export async function getAllvoyageurs(req,res){
     try{

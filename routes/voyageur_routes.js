@@ -1,5 +1,5 @@
 import express from "express";
-import * as voyageurController from "../controllers/voyageur_controllers";
+import * as voyageurController from "../controllers/voyageur_controllers.js";
 const router = express.Router();
 
 router.route("/").get(voyageurController.getAllvoyageurs)

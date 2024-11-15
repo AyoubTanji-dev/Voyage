@@ -1,4 +1,4 @@
-import * as reservationService from "../services/reservation_services";
+import * as reservationService from "../services/reservation_services.js";
 
 export async function getAllreservations(req,res){
     try {
@@ -27,7 +27,7 @@ export async function deleteReservationById(req,res){
         }
 }
 
-export async function getEeservationById(req,res){
+export async function getReservationById(req,res){
     try {
     const reservation=await reservationService.getReservationById(req.params.id);
     res.status(200).json(reservation);

@@ -1,6 +1,6 @@
 import DestinationModel from "../models/destination.js";
 import ReservationModel from "../models/reservation.js";
-export async function getAlldest(){
+export async function getAlldestinations(){
     const destinations=await DestinationModel.find();
     return destinations;
 }
